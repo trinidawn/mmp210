@@ -1,0 +1,89 @@
+body{
+	width: 90%;
+	margin: 0 auto;
+	font-family: Helvetica;
+	background-color: lightgray;
+    color: coral;
+
+}
+h1{
+	text-align: right;
+	font-size: 300%;
+	font-family: 'Oswald', sans-serif;
+	color: white;
+    width: 95%;
+
+}
+
+h2{
+    text-align: right;
+	font-size: 200%;
+	font-family: Helvetica;
+	color: coral;
+    width: 95%;  
+}
+
+p{
+	padding: 50px;
+	margin: 10px 0 0 0;
+	/*border: 1px solid red;*/
+}
+
+
+img {
+	width: 100%;
+
+}
+
+a{
+	color: coral;
+}
+
+a:hover {
+	color: aqua;
+}
+
+
+
+/* Navigation Styles */
+
+nav{
+	text-align: right;
+}
+
+nav ul{
+	list-style: none;
+}
+
+nav ul li{
+	/*border: 1px solid red;*/
+	display: inline;
+}
+
+nav ul li a{
+	/*border: 1px solid blue;*/
+	/*display: 1px solid red;*/
+	display: inline-block;
+	padding: 20px;
+	text-decoration: none;
+}
+
+a:hover{
+	background-color: aqua;
+	color: grey;
+	text-decoration: underline;
+}
+
+div{
+	width: 46.5%;
+	padding: 10px;
+	float: left;
+}
+
+.container {
+	overflow: auto;
+	width: 100%;
+}
+
+
+
