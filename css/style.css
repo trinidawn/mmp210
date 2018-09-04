@@ -1,8 +1,7 @@
 body{
 	width: 90%;
 	margin: 0 auto;
-	font-family: Helvetica;
-	background-color: lightgray;
+	font-family: Arial, Helvetica, sans-serif;
     color: coral;
 
 }
@@ -11,39 +10,21 @@ h1{
 	font-size: 300%;
 	font-family: 'Oswald', sans-serif;
 	color: white;
-    width: 95%;
+    width: 100%;
 
 }
 
 h2{
     text-align: right;
 	font-size: 200%;
-	font-family: Helvetica;
+	font-family: Arial, Helvetica, sans-serif;
 	color: coral;
-    width: 95%;  
-}
-
-p{
-	padding: 50px;
-	margin: 10px 0 0 0;
-	/*border: 1px solid red;*/
-}
-
-
-img {
-	width: 100%;
-
+    width: 100%;  
 }
 
 a{
 	color: coral;
 }
-
-a:hover {
-	color: aqua;
-}
-
-
 
 /* Navigation Styles */
 
@@ -56,34 +37,36 @@ nav ul{
 }
 
 nav ul li{
-	/*border: 1px solid red;*/
 	display: inline;
 }
 
 nav ul li a{
-	/*border: 1px solid blue;*/
-	/*display: 1px solid red;*/
 	display: inline-block;
 	padding: 20px;
 	text-decoration: none;
 }
 
 a:hover{
-	background-color: aqua;
-	color: grey;
+	background-color: gainsboro;
+	color: coral;
 	text-decoration: underline;
 }
 
-div{
-	width: 46.5%;
-	padding: 10px;
-	float: left;
+.link {
+  list-style: none;
+  color: whitesmoke;
+  font-size: 1.2em;
 }
 
-.container {
-	overflow: auto;
-	width: 100%;
+.link a {
+  color: lightsalmon;
 }
 
+ul li {
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+	color: coral;
+    width: 100%; 
+}
 
 
