@@ -7,29 +7,54 @@ MMP 210 example week 2
 
 
 function setup() {
-	createCanvas(640, 360);
+	createCanvas(700, 860);
 }
 
 function draw() {
-	background(220);
+	background(143, 188, 139)
+    ellipseMode(CENTER)
+    rectMode(CENTER)
     
     //head
-    fill('plum')
+    fill('DARKGOLDENROD')
     noStroke();
-    rect(100, 100, 200, 250);
-    
-    //hair
+    ellipse(220, 220, 220, 280);
     
     
     //eyes
     noFill();
-    stroke('yellow');
-    strokeWeight(10);
-    ellipse(280, 180, 100);
-    ellipse(120, 180, 100, 50);
+    stroke('black');
+    strokeWeight(2);
+    line(370, 160, 470, 160);
+    ellipse(175, 180, 80, 40);//right
+    ellipse(270, 180, 80, 40);//left
+   
+    // nose
+    rect(220, 230, 15, 25, 25);
     
-    // mouth
-    rect(150, 280, 100, 25, 10);
+    //mouth
+    fill('MAGENTA')
+    ellipse(225, 280, 100, 15, 15);
     
+    //eyes dot
+    fill('black');
+    ellipse(175, 180, 5, 5, 5);//right
+    ellipse(270, 180, 5, 5, 5);//left
+    
+    //glasses line
+   // line(810, 490, 220, 220, 50)
+    
+    //body
+            fill('MAGENTA');
+            rect(220, 500, 225, 280);
+    
+    //legs
+            fill('DARKGOLDENROD');
+            rect(175, 715, 60, 150);//right
+            rect(270, 715, 60, 150);//left
+            
+    
+ 
+            
  
 }
