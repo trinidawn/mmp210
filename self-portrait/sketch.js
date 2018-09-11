@@ -25,7 +25,6 @@ function draw() {
     noFill();
     stroke('black');
     strokeWeight(2);
-    line(370, 160, 470, 160);
     ellipse(175, 180, 80, 40);//right
     ellipse(270, 180, 80, 40);//left
    
