@@ -3,7 +3,7 @@ Self Portait
 v 1
 by Dawn Joseph
 MMP 210 example week 2
-
+hard coded example
 */
 
 
