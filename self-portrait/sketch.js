@@ -3,7 +3,7 @@ Self Portait
 v 1
 by Dawn Joseph
 MMP 210 example week 2
-
+Hard copy example
 */
 
 
@@ -15,12 +15,11 @@ function draw() {
 	background(143, 188, 139);
     ellipseMode(CENTER);
     rectMode(CENTER);
-    
+   
     //head
     fill('DARKGOLDENROD');
     noStroke();
     ellipse(220, 220, 220, 280);
-    
     
     //eyes
     noFill();
@@ -52,6 +51,7 @@ function draw() {
     strokeWeight(1);
     fill('MAGENTA');
     ellipse(225, 275, 100, 15, 15);
+
     
     //eyes dot
     fill('SADDLEBROWN');
