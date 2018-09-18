@@ -83,15 +83,81 @@ function draw() {
     var noseA = 25;
     
     //Variables mouth
-    var mouthColor = 'SADDLEBROWN';
+    var mouthC = 'SADDLEBROWN';
     var mouthW = 1;
-    var mouthC = 'DARKGOLDENROD';
+    var mouthColor = 'DARKGOLDENROD';
     
     var mouthX = 225;
     var mouthY = 275; 
     var mouthWidth = 100;
     var mouthHeight = 15;
     var mouthA = 15;
+    
+    //Variables eyes pupil
+    var eyesPupilColor = 'SADDLEBROWN';
+    
+    var eyesPupilX = 175;
+    var eyesPupilY = 180; 
+    var eyesPupilW = 15;
+    var eyesPupilH = 15;
+    
+    var eyesPX = 270;
+    var eyesPupilY = 180; 
+    var eyesPupilW = 15;
+    var eyesPupilH = 15;
+    
+    //Variables body
+    var bodyStroke = 'black';
+    var bodyW = 2;
+    var bodyColor = 'MAGENTA';
+    
+    var bodyX = 220;
+    var bodyY = 500; 
+    var bodyWidth = 225;
+    var bodyHeight = 280;
+    var bodyA = 5;
+    
+    //Variables hands
+    var handsC = 'DARKGOLDENROD';
+    var handsW = 15;
+    
+    var handsLineX = 390;
+    var handsLineY = 520;
+    var handsLineW = 340;
+    var handsLineH = 364;
+    
+    var handsLine0X = 50;
+    var handsLineY = 520;
+    var handsLine0W = 99;
+    var handsLineH = 364;
+    
+    //Variables legs
+    var legsColor = 'DARKGOLDENROD';
+    
+    var legsRightX = 175;
+    var legsRightY = 715;
+    var legsRightWidth = 60;
+    var legsRightHeight = 148;
+    
+    var legsLeftX = 270;
+    var legsLeftY = 715;
+    var legsLeftWidth = 60;
+    var legsLeftHeight = 148;
+    
+    //Variables buttons
+    var buttonW = 13;
+    
+    var buttonX1 = 220;
+    var buttonY1 = 380;
+    var buttonX2 = 220;
+    var buttonY2 = 410;
+    var buttonX3 = 220;
+    var buttonY3 = 440;
+    var buttonX4 = 220;
+    var buttonY4 = 470;
+    var buttonX5 = 220;
+    var buttonY5 = 500;
+    
     
     //head
     fill(headColor);
@@ -123,42 +189,42 @@ function draw() {
     rect(noseX, noseY, noseWidth, noseHeight, noseA);
     
     //mouth
-    stroke(mouthColor);
+    stroke(mouthC);
     strokeWeight(mouthW);
 
-    fill(mouthC);
+    fill(mouthColor);
     ellipse(mouthX, mouthY, mouthWidth, mouthHeight, mouthA);
 
     fill('DARKGOLDENROD');
     noStroke();
     ellipse(225, 265, 100, 15, 15);
     
-    //eyes dot
-    fill('SADDLEBROWN');
-    ellipse(175, 180, 15, 15);//right
-    ellipse(270, 180, 15, 15);//left
+    //eyes pupil
+    fill(eyesPupilColor);
+    ellipse(eyesPupilX, eyesPupilY, eyesPupilH, eyesPupilW);//right
+    ellipse(eyesPX, eyesPupilY, eyesPupilH, eyesPupilW);//left
     
     //body
-     stroke('black');
-    strokeWeight(2);
-    fill('MAGENTA');
-    rect(220, 500, 225, 280, 5);
+    stroke(bodyStroke);
+    strokeWeight(bodyW);
+    fill(bodyColor);
+    rect(bodyX, bodyY, bodyWidth, bodyHeight, bodyA);
     
     //hands
-    stroke('DARKGOLDENROD');
-    strokeWeight(15);
-    line(390, 520, 340, 364);
-    line(50, 520, 99, 364);
+    stroke(handsC);
+    strokeWeight(handsW);
+    line(handsLineX, handsLineY, handsLineW, handsLineH);
+    line(handsLine0X, handsLineY, handsLine0W, handsLineH);
      
     //legs
-    fill('DARKGOLDENROD');
+    fill(legsColor);
     noStroke();
-    rect(175, 715, 60, 148);//right
-    rect(270, 715, 60, 148);//left
+    rect(legsRightX, legsRightY, legsRightWidth, legsRightHeight);//right
+    rect(legsLeftX, legsLeftY, legsLeftWidth, legsLeftHeight);//left
     
     
-    //dots
-    strokeWeight(13);
+    //buttons
+    strokeWeight(buttonW);
     stroke(0);
     point(220, 380);//1
     point(220, 410);//2

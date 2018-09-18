@@ -53,7 +53,7 @@ function draw() {
     ellipse(225, 275, 100, 15, 15);
 
     
-    //eyes dot
+    //eyes pupil
     fill('SADDLEBROWN');
     ellipse(175, 180, 10, 10);//right
     ellipse(270, 180, 10, 10);//left
@@ -77,7 +77,7 @@ function draw() {
     rect(270, 715, 60, 148);//left
     
     
-    //dots
+    //buttons
     strokeWeight(13);
     stroke(0);
     point(220, 380);//1
