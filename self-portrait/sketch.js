@@ -55,8 +55,11 @@ function draw() {
     
     //eyes pupil
     fill('SADDLEBROWN');
-    ellipse(175, 180, 10, 10);//right
-    ellipse(270, 180, 10, 10);//left
+    ellipse(175, 182, 15, 15);//right
+    ellipse(270, 182, 15, 15);//left
+    fill('black');
+    ellipse(175, 182, 7, 7);//right
+    ellipse(270, 182, 7, 7);//left
     
     //body
      stroke('black');

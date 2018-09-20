@@ -61,6 +61,7 @@ function draw() {
     var hatY = 90;
     var hatWidth = 180;
     var hatHeight = 80;
+    var hatA = 5;
     
     var hatLineX = 70;
     var hatLineY = 130;
@@ -104,14 +105,26 @@ function draw() {
     var eyesPupilColor = 'SADDLEBROWN';
     
     var eyesPupilX = 175;
-    var eyesPupilY = 180; 
+    var eyesPupilY = 182; 
     var eyesPupilW = 15;
-    var eyesPupilH = 15;
+    var eyesPupilH = 20;
     
     var eyesPX = 270;
-    var eyesPupilY = 180; 
+    var eyesPupilY = 182; 
     var eyesPupilW = 15;
-    var eyesPupilH = 15;
+    var eyesPupilH = 20;
+    
+    var eyesPupilColor2 = 'black';
+    
+    var eyesPupilX1 = 178;
+    var eyesPupilY1 = 182; 
+    var eyesPupilW1 = 7;
+    var eyesPupilH1 = 7;
+    
+    var eyesPX2 = 273;
+    var eyesPupilY2 = 182; 
+    var eyesPupilW2 = 7;
+    var eyesPupilH2 = 7;
     
     //Variables body
     var bodyStroke = 'black';
@@ -145,11 +158,13 @@ function draw() {
     var legsRightY = 715;
     var legsRightWidth = 60;
     var legsRightHeight = 148;
+    var legsRightA = 5;
     
     var legsLeftX = 270;
     var legsLeftY = 715;
     var legsLeftWidth = 60;
     var legsLeftHeight = 148;
+    var legsLeftA = 5;
     
     //Variables buttons
     var buttonW = 13;
@@ -185,7 +200,7 @@ function draw() {
     stroke(hatStroke);
     strokeWeight(hatW);
     fill(hatColor);
-    rect(hatX, hatY, hatWidth, hatHeight);
+    rect(hatX, hatY, hatWidth, hatHeight, hatA);
     line(hatLineX, hatLineY, hatLineW, hatLineH);
     line(hatLine0X, hatLineY, hatLine0W, hatLineH);
    
@@ -200,14 +215,17 @@ function draw() {
     strokeWeight(mouthW);
     fill(mouthColor1);
     ellipse(mouthX, mouthY, mouthWidth, mouthHeight, mouthA);
-    fill('DARKGOLDENROD');
+    fill(mouthColor2);
     noStroke();
     ellipse(mouthX2, mouthY2, mouthW2, mouthH2, mouthA2);
     
     //eyes pupil
     fill(eyesPupilColor);
-    ellipse(eyesPupilX, eyesPupilY, eyesPupilH, eyesPupilW);//right
-    ellipse(eyesPX, eyesPupilY, eyesPupilH, eyesPupilW);//left
+    ellipse(eyesPupilX, eyesPupilY, eyesPupilW, eyesPupilH);//right
+    ellipse(eyesPX, eyesPupilY, eyesPupilW, eyesPupilH);//left
+    fill(eyesPupilColor2);
+    ellipse(eyesPupilX1, eyesPupilY1, eyesPupilW1, eyesPupilH1);//right
+    ellipse(eyesPX2, eyesPupilY2, eyesPupilW2, eyesPupilH2);//left
     
     //body
     stroke(bodyStroke);
@@ -224,17 +242,16 @@ function draw() {
     //legs
     fill(legsColor);
     noStroke();
-    rect(legsRightX, legsRightY, legsRightWidth, legsRightHeight);//right
-    rect(legsLeftX, legsLeftY, legsLeftWidth, legsLeftHeight);//left
-    
-    
+    rect(legsRightX, legsRightY, legsRightWidth, legsRightHeight, legsRightA);//right
+    rect(legsLeftX, legsLeftY, legsLeftWidth, legsLeftHeight, legsLeftA);//left
+   
     //buttons
     strokeWeight(buttonW);
     stroke(0);
-    point(220, 380);//1
-    point(220, 410);//2
-    point(220, 440);//3
-    point(220, 470);//4
-    point(220, 500);//5
+    point(buttonX1, buttonY1);//1
+    point(buttonX2, buttonY2);//2
+    point(buttonX3, buttonY3);//3
+    point(buttonX4, buttonY4);//4
+    point(buttonX5, buttonY5);//5
  
 }
