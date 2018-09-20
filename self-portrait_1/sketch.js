@@ -83,15 +83,22 @@ function draw() {
     var noseA = 25;
     
     //Variables mouth
-    var mouthC = 'SADDLEBROWN';
+    var mouthStroke = 'SADDLEBROWN'; 
     var mouthW = 1;
-    var mouthColor = 'DARKGOLDENROD';
+    var mouthColor1 = 'MAGENTA';
+    var mouthColor2 = 'DARKGOLDENROD';
     
     var mouthX = 225;
-    var mouthY = 275; 
+    var mouthY = 275;
     var mouthWidth = 100;
-    var mouthHeight = 15;
-    var mouthA = 15;
+    var mouthHeight = 20;
+    var mouthA = 20;
+    
+    var mouthX2 = 215;
+    var mouthY2 = 260;
+    var mouthW2 = 100;
+    var mouthH2 = 35;
+    var mouthA2 = 35;
     
     //Variables eyes pupil
     var eyesPupilColor = 'SADDLEBROWN';
@@ -189,15 +196,13 @@ function draw() {
     rect(noseX, noseY, noseWidth, noseHeight, noseA);
     
     //mouth
-    stroke(mouthC);
+    stroke(mouthStroke);
     strokeWeight(mouthW);
-
-    fill(mouthColor);
+    fill(mouthColor1);
     ellipse(mouthX, mouthY, mouthWidth, mouthHeight, mouthA);
-
     fill('DARKGOLDENROD');
     noStroke();
-    ellipse(225, 265, 100, 15, 15);
+    ellipse(mouthX2, mouthY2, mouthW2, mouthH2, mouthA2);
     
     //eyes pupil
     fill(eyesPupilColor);
