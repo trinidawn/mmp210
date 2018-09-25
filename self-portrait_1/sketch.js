@@ -12,7 +12,7 @@ function setup() {
 }
 
 function draw() {
-	background(143, 188, 139);
+	background(143, 188, 139,);
     ellipseMode(CENTER);
     rectMode(CENTER);
     
