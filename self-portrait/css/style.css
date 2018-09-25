@@ -18,4 +18,12 @@ h1 {
 
 li {
     list-style-type: none;
+    text-align: center;
+    
+}
+
+li a {
+    color: bisque;
+    font-size: 150%;
+    
 }
