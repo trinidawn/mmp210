@@ -118,13 +118,13 @@ function draw() {
     
     var eyesPupilX1 = 178;
     var eyesPupilY1 = 182; 
-    var eyesPupilW1 = 7;
-    var eyesPupilH1 = 7;
+    var eyesPupilW1 = 8;
+    var eyesPupilH1 = 8;
     
-    var eyesPX2 = 273;
+    var eyesPX2 = 272;
     var eyesPupilY2 = 182; 
-    var eyesPupilW2 = 7;
-    var eyesPupilH2 = 7;
+    var eyesPupilW2 = 8;
+    var eyesPupilH2 = 8;
     
     //Variables body
     var bodyStroke = 'black';
