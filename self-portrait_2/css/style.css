@@ -11,18 +11,26 @@ h1 {
     color: #8FBC8B;
     text-align: center;
     font-family: 'Merriweather Sans', sans-serif;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 40px;
+    margin-bottom: 20px;
     font-size: 220%;
 }
 
 li {
     list-style-type: none;
-    text-align: center; 
+    text-align: center;
+    
 }
-
 
 li a {
     color: bisque;
-    font-size: 150%; 
+    font-size: 200%;
+    text-decoration: none;  
+}
+
+p {
+    text-align: center;
+    color: #8FBC8B;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 150%;
 }

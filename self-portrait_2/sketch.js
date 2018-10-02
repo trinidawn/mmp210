@@ -8,7 +8,7 @@ Interactive example
 
 
 function setup() {
-	createCanvas(700, 860);
+	createCanvas(500, 640);
 }
 
 function draw() {
@@ -16,12 +16,26 @@ function draw() {
     ellipseMode(CENTER);
     rectMode(CENTER);
     
+   //Interactive background
+    var r1 = map(mouseX, 0, width, 0, height);
+    var r2 = height - r1;
+    var r = map(mouseX, 0, 550, 0, 250);
+    var b = map(mouseX, 0, 550, 250, 0);
+  
+    fill(r, 0, b, r1);
+    rect(width/2 + r1/2, height/2, r1, r1);
+  
+    fill(b, 0 , r, r2);
+    rect(width/2 - r2/2, height/2, r2, r2);
+  
+	
     //Variables head
     var headX = 220;
     var headY = 220; 
     var headWidth = 220;
     var headHeight = 280;
     var headColor = 'DARKGOLDENROD';
+    
     
     //Variables eyes
     var eyeStroke = 'black';
@@ -42,8 +56,8 @@ function draw() {
     var lineX002 = 325;
     var lineY002 = 180;
     
-    var eyeRightX = mouseX;
-    var eyeRightY = mouseY;
+    var eyeRightX = 175;
+    var eyeRightY = 180;
     var eyeRightWidth = 80;
     var eyeRightHeight = 40;
     
@@ -51,6 +65,7 @@ function draw() {
     var eyeLeftY = 180;
     var eyeLeftWidth = 80;
     var eyeLeftHeight = 40;
+
     
     //Variables hat
     var hatStroke = 'black';
@@ -72,6 +87,7 @@ function draw() {
     var hatLineY = 130;
     var hatLine0W = 370;
     var hatLineH = 130;
+
     
     //Variables nose
     var noseStroke = 'black';
@@ -82,6 +98,7 @@ function draw() {
     var noseWidth = 17;
     var noseHeight = 25;
     var noseA = 25;
+    
     
     //Variables mouth
     var mouthStroke = 'SADDLEBROWN'; 
@@ -100,6 +117,7 @@ function draw() {
     var mouthW2 = 100;
     var mouthH2 = 35;
     var mouthA2 = 35;
+    
     
     //Variables eyes pupil
     var eyesPupilColor = 'SADDLEBROWN';
@@ -126,6 +144,7 @@ function draw() {
     var eyesPupilW2 = 8;
     var eyesPupilH2 = 8;
     
+    
     //Variables body
     var bodyStroke = 'black';
     var bodyW = 2;
@@ -136,6 +155,7 @@ function draw() {
     var bodyWidth = 225;
     var bodyHeight = 280;
     var bodyA = 5;
+    
     
     //Variables hands
     var handsC = 'DARKGOLDENROD';
@@ -151,20 +171,6 @@ function draw() {
     var handsLine0W = 99;
     var handsLineH = 364;
     
-    //Variables legs
-    var legsColor = 'DARKGOLDENROD';
-    
-    var legsRightX = 175;
-    var legsRightY = 715;
-    var legsRightWidth = 60;
-    var legsRightHeight = 148;
-    var legsRightA = 5;
-    
-    var legsLeftX = 270;
-    var legsLeftY = 715;
-    var legsLeftWidth = 60;
-    var legsLeftHeight = 148;
-    var legsLeftA = 5;
     
     //Variables buttons
     var buttonW = 13;
@@ -179,6 +185,21 @@ function draw() {
     var buttonY4 = 470;
     var buttonX5 = 220;
     var buttonY5 = 500;
+    
+    //Variables legs
+    /*var legsColor = 'DARKGOLDENROD';
+    
+    var legsRightX = 175;
+    var legsRightY = 715;
+    var legsRightWidth = 60;
+    var legsRightHeight = 148;
+    var legsRightA = 5;
+    
+    var legsLeftX = 270;
+    var legsLeftY = 715;
+    var legsLeftWidth = 60;
+    var legsLeftHeight = 148;
+    var legsLeftA = 5;*/
     
     
     //head
@@ -238,12 +259,6 @@ function draw() {
     strokeWeight(handsW);
     line(handsLineX, handsLineY, handsLineW, handsLineH);
     line(handsLine0X - 100, handsLineY, handsLine0W, handsLineH);
-     
-    //legs
-    fill(legsColor);
-    noStroke();
-    rect(legsRightX, legsRightY, legsRightWidth, legsRightHeight, legsRightA);//right
-    rect(legsLeftX, legsLeftY, legsLeftWidth, legsLeftHeight, legsLeftA);//left
    
     //buttons
     strokeWeight(buttonW);
@@ -253,5 +268,11 @@ function draw() {
     point(buttonX3, buttonY3);//3
     point(buttonX4, buttonY4);//4
     point(buttonX5, buttonY5);//5
+    
+    //legs
+    /*fill(legsColor);
+    noStroke();
+    rect(legsRightX, legsRightY, legsRightWidth, legsRightHeight, legsRightA);//right
+    rect(legsLeftX, legsLeftY, legsLeftWidth, legsLeftHeight, legsLeftA);//left*/
  
 }
