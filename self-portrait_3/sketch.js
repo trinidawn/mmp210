@@ -17,16 +17,16 @@ function draw() {
     rectMode(CENTER);
     
    //Interactive background
-    var r1 = map(mouseX, 0, width, 0, height);
-    var r2 = height - r1;
-    var r = map(mouseX, 0, 550, 0, 250);
-    var b = map(mouseX, 0, 550, 250, 0);
+    var d1 = map(mouseX, 0, width, 0, height);
+    var d2 = height - d1;
+    var d = map(mouseX, 0, 550, 0, 250);
+    var c = map(mouseX, 0, 550, 250, 0);
   
-    fill(r, 0, b, r1);
-    rect(width/2 + r1/2, height/2, r1, r1);
+    fill(d, 0, c, d1);
+    rect(width/2 + d1/2, height/2, d1, d1);
   
-    fill(b, 0 , r, r2);
-    rect(width/2 - r2/2, height/2, r2, r2);
+    fill(c, 0 , d, d2);
+    rect(width/2 - d2/2, height/2, d2, d2);
   
 	
     //Variables head
