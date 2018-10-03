@@ -91,13 +91,13 @@ function draw() {
     
     //Variables nose
     var noseStroke = 'black';
-    var noseW = 2;
+    var noseW = 3;
     
     var noseX = 220;
-    var noseY = 215; 
+    var noseY = 220; 
     var noseWidth = 17;
     var noseHeight = 25;
-    var noseA = 25;
+    var noseA = 10;
     
     
     //Variables mouth

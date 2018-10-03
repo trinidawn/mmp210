@@ -27,3 +27,15 @@ li a {
     font-size: 200%;
     text-decoration: none;  
 }
+
+button {
+    margin-top: 15px;
+    font-size: 90%;
+    border-radius: 5px;
+    background-color: bisque;
+    font-weight: 500;
+}
+
+a:hover button {
+    background-color: white;
+}
