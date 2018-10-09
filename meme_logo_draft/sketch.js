@@ -6,16 +6,34 @@ by Dawn Joseph
 rough draft
 MMMP 210 week 5
 */
+var dog1; // global
+var dog2;
+
+function preload() {
+    dog1 = loadImage("dog1.jpg");
+    dog2 = loadImage("dog2.jpg");
+}
 
 function setup() {
-    createCanvas(500, 500);
+    createCanvas(800, 800);
 }
 
 function draw() {
     background(0);
-    fill(255);
-    textAlign(CENTER, CENTER);
-    textSize(125);
-    textFont("Papyrus");
-    text("LOGO", width/2, height/2);
+    
+    image(dog1, 0, 0, width/2, height);
+    image(dog2, width/2, 0, width/2, height);
+    
+    fill(10, 63, 247);
+    textAlign(LEFT);
+    textSize(31);
+    textFont("Futura");
+    text("Day Before 2016 Election!", width/34, height/20);
+    
+    fill(255, 0, 0);
+    textAlign(RIGHT);
+    textSize(31);
+    textFont("Futura");
+    text("Day After 2016 Election!", width/1, height/20);
 }
+
