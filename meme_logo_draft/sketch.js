@@ -28,9 +28,9 @@ function draw() {
     textAlign(LEFT);
     textSize(31);
     textFont("Arial Rounded MT Bold");
-    text("Day Before 2016 Election!", width/70, height/20);
+    text("Day Before 2016 Election!", width/78, height/20);
     stroke('black')
-    strokeWeight(4);
+    strokeWeight(3);
     
     fill(255, 0, 0);
     textAlign(RIGHT);
@@ -38,6 +38,6 @@ function draw() {
     textFont("Arial Rounded MT Bold");
     text("Day After 2016 Election!", width/1, height/20);
     stroke('white')
-    strokeWeight(4);
+    strokeWeight(3);
 }
 
