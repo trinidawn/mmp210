@@ -27,13 +27,17 @@ function draw() {
     fill(10, 63, 247);
     textAlign(LEFT);
     textSize(31);
-    textFont("Futura");
-    text("Day Before 2016 Election!", width/34, height/20);
+    textFont("Arial Rounded MT Bold");
+    text("Day Before 2016 Election!", width/70, height/20);
+    stroke('black')
+    strokeWeight(4);
     
     fill(255, 0, 0);
     textAlign(RIGHT);
     textSize(31);
-    textFont("Futura");
+    textFont("Arial Rounded MT Bold");
     text("Day After 2016 Election!", width/1, height/20);
+    stroke('white')
+    strokeWeight(4);
 }
 
