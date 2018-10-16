@@ -35,14 +35,13 @@ function draw() {
 	fill("white");
     noStroke();
 
-	/* for each quandrant, determine of mouse 
-		is inside bounds */	
+	/* four quandrant */	
 	if (mouseX > width/2 && mouseY > height/2) {
-		image(mr1, width/2, height/2, width, height);
+		image(mr1, width/2, height/2, width/2, height/2);
 	} else if (mouseX < width/2 && mouseY > height/2) {
-		image(mr2, 0, height/2, width/2, height);
+		image(mr2, 0, height/2, width/2, height/2);
 	} else if (mouseX > width/2 && mouseY < height/2) {
-		image(mr3, width/2, 0, width, height/2);
+		image(mr3, width/2, 0, width/2, height/2);
 	} else {
 		image(mr4, 0, 0, width/2, height/2);
 	}
@@ -52,7 +51,7 @@ function draw() {
     textAlign(LEFT);
     textSize(31);
     textFont("Arial Rounded MT Bold");
-    text("Mr. Liar liar pants on fire!", width/78, height/2);
+    text("Liar Liar pants on fire!", width/78, height/2);
     stroke('black')
     strokeWeight(3);
     
@@ -60,7 +59,7 @@ function draw() {
     textAlign(RIGHT);
     textSize(31);
     textFont("Arial Rounded MT Bold");
-    text("Mr. My way McConnell!", width/1, height/2);
+    text("McConnell!", width/1, height/2);
     stroke('black')
     strokeWeight(3);
     
@@ -68,7 +67,7 @@ function draw() {
     textAlign(LEFT);
     textSize(31);
     textFont("Arial Rounded MT Bold");
-    text("Mr Rude Giuliani!", width/78, height/1);
+    text("Giuliani!", width/78, height/1);
     stroke('black')
     strokeWeight(3);
     
@@ -76,7 +75,7 @@ function draw() {
     textAlign(RIGHT);
     textSize(31);
     textFont("Arial Rounded MT Bold");
-    text("Ms. Press Huck-a-bee!", width/1, height/1);
+    text("Huck-a-bee!", width/1, height/1);
     stroke('black')
     strokeWeight(3);
     

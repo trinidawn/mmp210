@@ -13,7 +13,8 @@ h1 {
     font-family: 'Merriweather Sans', sans-serif;
     margin-top: 40px;
     margin-bottom: 20px;
-    font-size: 220%;
+    font-size: 40px;
+    font-weight: 300;
 }
 
 li {
@@ -38,4 +39,10 @@ button {
 
 a:hover button {
     background-color: white;
+}
+
+p {
+    text-align: center;
+    font-size: 35px;
+    color: aliceblue;
 }
