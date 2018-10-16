@@ -24,6 +24,15 @@ function setup() {
 
 function draw() {
     background(91, 96, 115);
+    rect(0, 0, 400, 400);
+    fill(255, 210, 218);
+    rect(400, 0, 400, 400);
+    fill(202, 241, 188);
+    rect(0, 400, 400, 400);
+    fill(253, 255, 182);
+    rect(400, 400, 400, 400);
+    fill('orange');
+    
     
     /* draw quandrant lines */
 	strokeWeight(2);
@@ -47,38 +56,36 @@ function draw() {
 	}
     
     
-    fill(255, 0, 0);
+    fill(35, 156, 211);
     textAlign(LEFT);
     textSize(31);
     textFont("Arial Rounded MT Bold");
-    text("Liar Liar pants on fire!", width/78, height/2);
-    stroke('black')
+    text("Liar Liar pants on fire!", (width/78)+20, (height/2)-10);
+    stroke('black');
     strokeWeight(3);
     
-    fill(255, 0, 0);
+    fill(35, 156, 211);
     textAlign(RIGHT);
     textSize(31);
     textFont("Arial Rounded MT Bold");
-    text("McConnell!", width/1, height/2);
-    stroke('black')
+    text("McConnell!", (width/1)-110, (height/2)-10);
+    stroke('black');
     strokeWeight(3);
     
-    fill(255, 0, 0);
+    fill(35, 156, 211);
     textAlign(LEFT);
     textSize(31);
     textFont("Arial Rounded MT Bold");
-    text("Giuliani!", width/78, height/1);
-    stroke('black')
+    text("Giuliani!", (width/78)+120, (height/1)-15);
+    stroke('black');
     strokeWeight(3);
     
-    fill(255, 0, 0);
+    fill(35, 156, 211);
     textAlign(RIGHT);
     textSize(31);
     textFont("Arial Rounded MT Bold");
-    text("Huck-a-bee!", width/1, height/1);
-    stroke('black')
+    text("Huck-a-bee!", (width/1)-110, (height/1)-15);
+    stroke('black');
     strokeWeight(3);
-    
-
 }
 
