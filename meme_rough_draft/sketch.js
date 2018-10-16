@@ -20,17 +20,10 @@ function setup() {
 
 function draw() {
     background(0);
+
     
-    if (mouseX > width/2) {
-        image(dog1, 0, 0, width/2, height);
-        image(dog2, width/2, 0, width/2, height);
-    } else {
-        image(dog2, 0, 0, width/2, height);
-        image(dog1, width/2, 0, width/2, height);
-    }
-    
-    /*image(dog1, 0, 0, width/2, height);
-    image(dog2, width/2, 0, width/2, height);*/
+    image(dog1, 0, 0, width/2, height);
+    image(dog2, width/2, 0, width/2, height);
     
     fill(10, 63, 247);
     textAlign(LEFT);
