@@ -8,23 +8,31 @@ MMMP 210 Week 6
 */
 
 let img 
+let img2
 //function preload(){
 
 
 function setup() {
     createCanvas(800, 600);
-    img = loadImage('mrbounce.jpg');     
+    img = loadImage('mrbounce.jpg');
+    img2 = loadImage('smilefaces.jpeg');
 }
 
+// variables for text animation
 var tumble = -200;
 var read = 950;
 var book = -200;
 var club = 950;
 
+// variables for image animation
+var xv = 50;
+var yv = -170;
+
 function draw() {
 background(189, 189, 189);
     //rectMode(CENTER);
     
+
 
     //rect(0, 0, 100, 100);
     //rect(0, 0, 400, 400);
@@ -43,7 +51,9 @@ background(189, 189, 189);
      
 
     //Text and color
-    fill(255, 5, 80);
+    //fill(255, 5, 80);
+    ram(255);
+    noStroke();
     textAlign(CENTER, CENTER);
     textSize(90);
     textFont("Papyrus");
@@ -99,7 +109,20 @@ background(189, 189, 189);
     arc(501, 260, 220, 220, PI, TWO_PI);
     
     
-    image(img,585, 170, img.width/3, img.height/3);
+    //image(img, 585, 170, img.width/3, img.height/3);
+    image(img, xv, yv, img.width/3, img.height/3);
+    xv += 8;
+    yv += 5;
+    if(xv >= 585 || yv >= 170){
+        xv = 585;
+        yv = 170;
+    }
+    //image(img2, 50, 542, img2.width/2, img.height/8);
+     
+}
+function ram(x){
+   r = random(0, x); 
+   fill(r, 5, 80);
 }
 
 
