@@ -36,7 +36,7 @@ background(189, 189, 189);
 
     //Text and color
     //fill(255, 5, 80);
-    ram(400);
+    ram(255, 0, 0);
     noStroke();
     textAlign(CENTER, CENTER);
     textSize(90);
@@ -54,7 +54,7 @@ background(189, 189, 189);
     textFont("Papyrus");
     text("Read", read, height/1.9);
     //text(width/1.7, 400,50); //finding the value of x
-    read -= 5;
+    read -= 6;
     if (read <= 471){
         read = 471;
     }
@@ -66,7 +66,7 @@ background(189, 189, 189);
     textFont("Papyrus");
     text("Book", book, height/1.5);
     //text(width/2, 400,50);
-    book += 7;
+    book += 8;
     if (book >= 400){
         book = 400;
     }
@@ -88,7 +88,7 @@ background(189, 189, 189);
     strokeWeight(2);
     arc(71, 260, 200, 200, PI + QUARTER_PI, TWO_PI);
     arc(281, 260, 220, 220, PI, TWO_PI);
-    arc(501, 260, 220, 220, PI, TWO_PI);
+    arc(501, 260, 220, 270, PI, TWO_PI);
     
     
     //image(img, 585, 170, img.width/3, img.height/3);
