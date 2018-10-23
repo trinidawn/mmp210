@@ -36,7 +36,7 @@ background(189, 189, 189);
     //rect(230, 395, 1000, 140);
     
     //image(img,0, 0);
-     image(img,585, 170, img.width/3, img.height/3);
+     //image(img,585, 170, img.width/3, img.height/3);
     /*translate(width/2, height/2);
 	let img = frameCount / 1000 * PI;
 	rotate(r);*/
@@ -72,7 +72,7 @@ background(189, 189, 189);
     textFont("Papyrus");
     text("Book", book, height/1.5);
     //text(width/2, 400,50);
-    book += 5;
+    book += 7;
     if (book >= 400){
         book = 400;
     }
@@ -92,9 +92,14 @@ background(189, 189, 189);
     
     
     noFill();
+    stroke('#401E1F');
+    strokeWeight(2);
     arc(71, 260, 200, 200, PI + QUARTER_PI, TWO_PI);
     arc(281, 260, 220, 220, PI, TWO_PI);
     arc(501, 260, 220, 220, PI, TWO_PI);
+    
+    
+    image(img,585, 170, img.width/3, img.height/3);
 }
 
 
