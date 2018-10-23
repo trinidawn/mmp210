@@ -36,7 +36,7 @@ background(189, 189, 189);
 
     //Text and color
     //fill(255, 5, 80);
-    ram(255);
+    ram(400);
     noStroke();
     textAlign(CENTER, CENTER);
     textSize(90);
