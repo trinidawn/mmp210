@@ -60,9 +60,10 @@ function draw() {
     textAlign(LEFT);
     textSize(31);
     textFont("Arial Rounded MT Bold");
-    text("Liar Liar pants on fire!", (width/78)+20, (height/2)-10);
     stroke('black');
     strokeWeight(3);
+    text("Liar Liar pants on fire!", (width/78)+20, (height/2)-10);
+    
     
     fill(35, 156, 211);
     textAlign(RIGHT);
