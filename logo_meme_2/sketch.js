@@ -32,22 +32,6 @@ function draw() {
 background(189, 189, 189);
     //rectMode(CENTER);
     
-
-
-    //rect(0, 0, 100, 100);
-    //rect(0, 0, 400, 400);
-    
-    //Text box tumble read
-    //rect(80, 285, 1000, 120);
-    
-    //Text box book club
-    //rect(230, 395, 1000, 140);
-    
-    //image(img,0, 0);
-     //image(img,585, 170, img.width/3, img.height/3);
-    /*translate(width/2, height/2);
-	let img = frameCount / 1000 * PI;
-	rotate(r);*/
      
 
     //Text and color
