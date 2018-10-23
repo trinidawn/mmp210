@@ -16,6 +16,11 @@ function setup() {
     img = loadImage('mrbounce.jpg');     
 }
 
+var tumble = -200;
+var read = 950;
+var book = -200;
+var club = 950;
+
 function draw() {
 background(189, 189, 189);
     //rectMode(CENTER);
@@ -42,27 +47,49 @@ background(189, 189, 189);
     textAlign(CENTER, CENTER);
     textSize(90);
     textFont("Papyrus");
-    text("Tumble", width/3.7, height/1.9);
+    text("Tumble", tumble, height/1.9);
+    tumble += 5;
+    if(tumble >= 216){
+        tumble = 216;
+    }
     
-    
+    //Text and color
     fill(5, 80, 255);
     textAlign(CENTER, CENTER);
     textSize(90);
     textFont("Papyrus");
-    text("Read", width/1.7, height/1.9);
+    text("Read", read, height/1.9);
+    //text(width/1.7, 400,50); //finding the value of x
+    read -= 5;
+    if (read <= 471){
+        read = 471;
+    }
     
-    
+    //Text and color
     fill(0, 181, 26);
     textAlign(CENTER, CENTER);
     textSize(90);
     textFont("Papyrus");
-    text("Book", width/2, height/1.5);
+    text("Book", book, height/1.5);
+    //text(width/2, 400,50);
+    book += 5;
+    if (book >= 400){
+        book = 400;
+    }
     
+    //Text and color
     fill(128, 0, 255);
     textAlign(CENTER, CENTER);
     textSize(90);
     textFont("Papyrus");
-    text("Club", width/1.3, height/1.5);
+    text("Club", club, height/1.5);
+    //text(width/1.3, 400,50);
+    club -= 5;
+    if (club <= 615){
+        club = 615;
+    }
+    
+    
     
     noFill();
     arc(71, 260, 200, 200, PI + QUARTER_PI, TWO_PI);
