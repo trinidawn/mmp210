@@ -83,8 +83,6 @@ background(189, 189, 189);
         club = 615;
     }
     
-    
-    
     noFill();
     stroke('#401E1F');
     strokeWeight(2);
@@ -104,6 +102,8 @@ background(189, 189, 189);
     //image(img2, 50, 542, img2.width/2, img.height/8);
      
 }
+
+// Color animation
 function ram(x){
    r = random(0, x); 
    fill(r, 5, 80);
