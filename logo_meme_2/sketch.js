@@ -11,24 +11,17 @@ let img
 //function preload(){
 
 
-
-//  img = loadImage('mr1.jpg');
-//}
-/*function setup() {
-  image(img, 0, 0);
-}*/
-
 function setup() {
     createCanvas(800, 600);
-    img = loadImage('mrbounce.jpg');
-       
+    img = loadImage('mrbounce.jpg');     
 }
 
-var xt = 1100;
-
 function draw() {
-    background(189, 189, 189);
-    rectMode(CENTER);
+background(189, 189, 189);
+    //rectMode(CENTER);
+    
+
+    //rect(0, 0, 100, 100);
     //rect(0, 0, 400, 400);
     
     //Text box tumble read
@@ -39,6 +32,9 @@ function draw() {
     
     //image(img,0, 0);
      image(img,585, 170, img.width/3, img.height/3);
+    /*translate(width/2, height/2);
+	let img = frameCount / 1000 * PI;
+	rotate(r);*/
      
 
     //Text and color
@@ -69,17 +65,12 @@ function draw() {
     text("Club", width/1.3, height/1.5);
     
     noFill();
-    //arc(50, 55, 70, 70, PI, PI + QUARTER_PI);
     arc(71, 260, 200, 200, PI + QUARTER_PI, TWO_PI);
-    //arc(300, 300, 220, 220, 1, PI + QUARTER_PI, OPEN);
     arc(281, 260, 220, 220, PI, TWO_PI);
     arc(501, 260, 220, 220, PI, TWO_PI);
 }
 
-function ram(x){
-   r = random(0, x); 
-   fill(r, 0, 0);
-}
+
 
 
 
