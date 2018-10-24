@@ -7,12 +7,20 @@ Animation
 MMMP 210 Week 6
 */
 
-let img 
+//image variable
+let img
+let img2
+let img3
+let img4
+let img5
 
 function setup() {
     createCanvas(800, 600);
     img = loadImage('mrbounce.jpg');
-    img2 = loadImage('smilefaces.jpeg');
+    img2 = loadImage('missstubborn.jpg');
+    img3 = loadImage('mrworry.jpg')
+    img4 = loadImage('missgiggles.jpg');
+    img5 = loadImage('missmagic.jpg');
 }
 
 // variables for text animation
@@ -21,9 +29,25 @@ var read = 950;
 var book = -200;
 var club = 950;
 
-// variables for image animation
-var xv = 50;
-var yv = -170;
+// variables for image animation img
+var xv = 40;
+var yv = -160;
+
+// variables for image animation img2
+var xv2 = 50;
+var yv2 = -180;
+
+// variables for image animation img3
+var xv3 = 60;
+var yv3 = -180;
+
+// variables for image animation img4
+var xv4 = 80;
+var yv4 = -180;
+
+// variables for image animation img5
+var xv5 = 100;
+var yv5 = -180;
 
 function draw() {
 background(189, 189, 189);
@@ -85,22 +109,63 @@ background(189, 189, 189);
     arc(281, 260, 220, 220, PI, TWO_PI);
     arc(501, 260, 220, 270, PI, TWO_PI);
     
+    //image animation
+    //image(img2, 585, 170, img.width/3, img.height/3);
+    image(img2, xv2, yv2, img.width/3, img.height/3);
+    xv2 += 8;
+    yv2 += 20;
+    if(xv2 >= 585 || yv2 >= 170){
+        xv2 = 585;
+        yv2 = 170;
+    } 
     
+    //image animation
+    //image(img3, 585, 170, img.width/3, img.height/3);
+    image(img3, xv3, yv3, img.width/3, img.height/3);
+    xv3 += 8;
+    yv3 += 16;
+    if(xv3 >= 585 || yv3 >= 170){
+        xv3 = 585;
+        yv3 = 170;
+    } 
+    
+    //image animation
+    //image(img4, 585, 170, img.width/3, img.height/3);
+    image(img4, xv4, yv4, img.width/3, img.height/3);
+    xv4 += 8;
+    yv4 += 12;
+    if(xv4 >= 585 || yv4 >= 170){
+        xv4 = 585;
+        yv4 = 170;
+    } 
+    
+    //image animation
+    //image(img5, 585, 170, img.width/3, img.height/3);
+    image(img5, xv5, yv5, img.width/3, img.height/3);
+    xv5 += 8;
+    yv5 += 6;
+    if(xv5 >= 585 || yv5 >= 170){
+        xv5 = 585;
+        yv5 = 170;
+    } 
+    
+    //image animation
     //image(img, 585, 170, img.width/3, img.height/3);
     image(img, xv, yv, img.width/3, img.height/3);
     xv += 8;
-    yv += 5;
+    yv += 2;
     if(xv >= 585 || yv >= 170){
         xv = 585;
         yv = 170;
-    }   
+    } 
+    
+    
 }
-
-// Color animation
-function ram(x){
-   r = random(0, x); 
-   fill(r, 5, 80);
-}
+    // Color animation
+    function ram(x){
+    r = random(0, x); 
+    fill(r, 5, 80);
+   }
 
 
 
