@@ -8,9 +8,6 @@ MMMP 210 Week 6
 */
 
 let img 
-let img2
-//function preload(){
-
 
 function setup() {
     createCanvas(800, 600);
@@ -30,10 +27,7 @@ var yv = -170;
 
 function draw() {
 background(189, 189, 189);
-    //rectMode(CENTER);
     
-     
-
     //Text and color
     //fill(255, 5, 80);
     ram(255, 0, 0);
@@ -83,6 +77,7 @@ background(189, 189, 189);
         club = 615;
     }
     
+    //Arc stroke
     noFill();
     stroke('#401E1F');
     strokeWeight(2);
@@ -98,9 +93,7 @@ background(189, 189, 189);
     if(xv >= 585 || yv >= 170){
         xv = 585;
         yv = 170;
-    }
-    //image(img2, 50, 542, img2.width/2, img.height/8);
-     
+    }   
 }
 
 // Color animation
